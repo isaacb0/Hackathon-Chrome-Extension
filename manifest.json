@@ -1,12 +1,38 @@
+// {
+//     "manifest_version": 3,
+//     "name": "whatever we want",
+//     "version": "1.0",
+//     "description": "blah",
+//     "content_scripts": [
+//         {
+//           "matches": [“<all_urls>”],
+//           "js": ["./main.js"]
+//         }
+//       ]
+//   }
+
 {
-    "manifest_version": 2,
-    "name": "Focus",
+
+    "manifest_version": 3,
+    "name": "My Extension",
     "version": "1.0",
-    "description": "blah",
+    
+  
+    "default_locale": "en",
+    "description": "Adds a gif to your current webpage",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      },
+    "author": "isaac&vicky",
     "content_scripts": [
         {
-          "matches": ["url(s)"],
-          "js": ["./main.js"]
+          "js": ["main.js"],
+          "matches": [
+            "https://*/*"
+          ]
         }
       ]
   }
