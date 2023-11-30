@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Focus",
+    "version": "1.0",
+    "description": "blah",
+    "content_scripts": [
+        {
+          "matches": ["url(s)"],
+          "js": ["./main.js"]
+        }
+      ]
+  }
